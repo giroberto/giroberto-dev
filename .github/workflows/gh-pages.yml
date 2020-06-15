@@ -1,0 +1,24 @@
+# .github/workflows/github-pages.yml
+
+name: GitHub Pages
+
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    deploy:
+        runs-on: ubuntu-18.04
+    steps:
+        - name: Install
+            run: yarn
+        - name: Build
+            run: yarn build
+        - uses: actions/checkout@v2
+        - name: Deploy to GitHub Pages
+            uses: peaceiris/actions-gh-pages@v3
+            with:
+                github_token: ${{ secrets.GITHUB_TOKEN }}
+                publish_dir: ./dist
+                allow_empty_commit: true          
