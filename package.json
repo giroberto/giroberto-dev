@@ -1,15 +1,16 @@
 {
-  "name": "giroberto-dev",
+  "name": "giroberto",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "serve": "vite preview"
   },
   "dependencies": {
-    "preact": "^10.4.1"
+    "preact": "^10.5.13"
   },
   "devDependencies": {
-    "@prefresh/vite": "^0.9.1",
-    "vite": "^0.20.0"
+    "@preact/preset-vite": "^2.0.0",
+    "vite": "^2.5.4"
   }
 }
