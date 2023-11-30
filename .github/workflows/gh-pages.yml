@@ -14,11 +14,11 @@ jobs:
           submodules: true  # Fetch
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Install
-        run: yarn
+      # - name: Install
+      #   run: yarn
         
-      - name: Build
-        run: yarn build --base=./
+      # - name: Build
+      #   run: yarn build --base=./
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
