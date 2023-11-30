@@ -4,7 +4,7 @@ const c = canvas.getContext('2d')
 
 const ratio = window.devicePixelRatio || 1
 
-canvas.width = (window.screen.width -48) * ratio;
+canvas.width = 1280;
 canvas.height = 576
 
 const scaledCanvas = {
