@@ -212,7 +212,15 @@ document.querySelector('.esquerda').addEventListener('mousedown', () => {
   keys.a.pressed = true
 })
 
+document.querySelector('.esquerda').addEventListener('touchstart', () => {
+  keys.a.pressed = true
+})
+
 document.querySelector('.esquerda').addEventListener('mouseup', () => {
+  keys.a.pressed = false
+})
+
+document.querySelector('.esquerda').addEventListener('touchend', () => {
   keys.a.pressed = false
 })
 
@@ -220,7 +228,15 @@ document.querySelector('.direita').addEventListener('mousedown', () => {
   keys.d.pressed = true
 })
 
+document.querySelector('.direita').addEventListener('touchstart', () => {
+  keys.d.pressed = true
+})
+
 document.querySelector('.direita').addEventListener('mouseup', () => {
+  keys.d.pressed = false
+})
+
+document.querySelector('.direita').addEventListener('touchend', () => {
   keys.d.pressed = false
 })
 
